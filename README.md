@@ -28,7 +28,7 @@
 - Menu de navegação com dropdowns funcionais
 - Layout responsivo (mobile, tablet e desktop)
 - Reconhecimento de NIP com ramificações lógicas:
-- Modal com formulário quando o usuário não reconhece ou não a NIP
+- Modal com formulário quando o usuário reconhece ou não a NIP
 - Agradecimento e alertas dinâmicos com base na resposta do usuário
 - Botões com estados visuais claros
 - Modal com formulário validado e campos editáveis
