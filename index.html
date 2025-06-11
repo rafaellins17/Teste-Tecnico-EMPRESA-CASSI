@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste - CASSI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" type="imagex/png" href="https://www.cassi.com.br/wp-content/themes/cassi/assets/img/favicon.ico">
+  <script defer src="script.js"></script>
+  <script src="https://kit.fontawesome.com/80e6526c1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+  <header>
+    <div class="top-bar container">
+      <img src="https://contrafcut.com.br/data/files/72/42/48/45/20C3191074559319820808A8/logocassi2.jpg" alt="Logo CASSI" class="logo" />
+      <div class="search-container">
+        <span class="search-icon">
+          <img src="https://www.cassi.com.br/wp-content/themes/cassi/assets/img/encontrar-credenciado.svg" alt="Ícone de busca">
+        </span>
+        <input type="text" placeholder="Faça sua busca aqui" class="search-input" />
+      </div>
+
+      <div class="social-follow">
+        <span class="social-text">Siga a CASSI nas redes sociais:</span>
+        <div class="social-icons">
+          <div class="icon-bg"><a href="#"><i class="fa fa-facebook-f"></i></a></div>
+          <div class="icon-bg"><a href="#"><i class='fab fa-linkedin-in'></i></a></div>
+          <div class="icon-bg"><a href="#"><i class="fa fa-instagram"></i></a></div>
+        </div>
+      </div>
+
+      <a href="#" class="link_app_telemedicina">
+        <img class="imgtelesaude" src="img/imagemtelesaude.png" alt="ícone telemedicina">
+        <p style="color: #002D4B;">Lorem Ipsum</p>
+      </a>
+
+      <a href="#" class="login-btn">Fazer login</a>
+    </div>
+  </div>
+ 
+
+
+
+    <nav class="navbar">
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu">&#9776;</button>
+      <ul class="menu" id="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Conheça a CASSI <span class="arrow"><img class="seta" src="img/seta.png" alt=""></span></a>
+          <ul class="submenu">
+            <li><a href="#">Institucional</a></li>
+            <li><a href="#">Informações financeiras</a></li>
+            <li><a href="#">Governança corporativa</a></li>
+            <li><a href="#">Como trabalhamos</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Nossos planos <span class="arrow"><img class="seta" src="img/seta.png" alt=""></span></a>
+          <ul class="submenu">
+            <li><a href="#">Plano CASSI Essencial</a></li>
+            <li><a href="#">Plano Família</a></li>
+            <li><a href="#">Plano Vida</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+           <a href="#">Já tenho um plano CASSI <span class="arrow"><img class="seta" src="img/seta.png" alt=""></span></a>
+          <ul class="submenu">
+            <li><a href="#">Cobertura</a></li>
+            <li><a href="#">Cronogramas</a></li>
+            <li><a href="#">Telemedicina</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">CliniCASSI<span class="arrow"><img class="seta" src="img/seta.png" alt=""></span></a>
+          <ul class="submenu">
+            <li><a href="#">Cobertura</a></li>
+            <li><a href="#">Cronogramas</a></li>
+            <li><a href="#">Telemedicina</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Fale com a CASSI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <div class="container">
+  <main class="container content">
+    <section class="left">
+      <h2>Olá, &lt;Nome&gt;</h2>
+      <br>
+      <p>Foi realizada a abertura de uma Notificação de Intermediação Preliminar (NIP) em seu nome.</p>
+      <br><br><br>
+
+      <header class="dados">
+        <h3>Dados do notificação</h3>
+      </header>
+      <div class="info-grid">
+        <div class="web-text-imput">
+          <strong>Beneficiário</strong><br><br>Leandro Henrique
+        </div>
+        <div class="web-text-imput">
+          <strong>Interlocutor</strong><br><br>Leandro Henrique
+        </div>
+      </div>
+      <div class="web-text-imput">
+        <strong>Data de abertura</strong><br><br>29/01/2022
+      </div>
+
+  <div class="nip" id="nip-title">
+  <strong>Reconhece esta NIP?</strong><br><br>
+</div>
+<div class="nip-buttons" id="nip-buttons">
+  <button class="btn-outline" id="btn-nao-nip">Não reconheço</button>
+  <button class="btn-primary" id="btn-sim-nip">Sim, foi aberto por mim</button>
+</div>
+
+<!-- Formulário modal oculto inicialmente -->
+<div class="modal" id="modal-form">
+  <div class="modal-content">
+    <h3>Verificar dados de contato</h3>
+    <p>Considerando que você não reconheceu a Notificação de Intermediação Preliminar (NIP), a CASSI entrará em contato para compreender melhor a situação. Por favor, verifique as informações abaixo e, se necessário, atualize-as:</p>
+   
+
+
+
+      <!-- formulario de usuário -->
+ <form>
+  <label for="nome">Beneficiário</label>
+  <input type="text" id="nome" value="Leandro Henrique" readonly class="input-readonly" />
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="leandro.henrique@gmail.com" required />
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">Celular</label>
+      <input type="tel" id="telefone" placeholder="(61) 9 9999-9999" required />
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <button type="button" class="btn-outline" id="btn-voltar">Voltar</button>
+    <button type="submit" class="btn-primary">Confirmar dados</button>
+  </div>
+</form>
+  </div>
+</div>
+    </section>
+
+    <section class="right">
+      <h3 style="color: #002D4B;     line-height: 28px;">Por que é importante que você responda esse questionário?</h3>
+      <img src="img/imagematendimento.jpg" alt="Pessoa atendendo" />
+      <p>
+        Na CASSI, buscamos aprimorar continuamente nossos serviços e métodos de atendimento. Nosso objetivo é acelerar o processo de análise das suas solicitações e torná-lo mais eficiente. Ao responder ao questionário, você nos ajuda a alcançar maior assertividade e rapidez no atendimento às suas necessidades.
+      </p>
+    </section>
+  </main>
+   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <img src="img/novofooterlogo.png" alt="CASSI Logo" class="footer-logo">
+
+          <div class="social-icons">
+          <div class="icon-bg-footer"><a href="#"><i style="color: #002D4B;" class="fa fa-facebook-f"></i></a></div>
+          <div class="icon-bg-footer"><a href="#"><i style="color: #002D4B;" class='fab fa-linkedin-in'></i></a></div>
+          <div class="icon-bg-footer"><a href="#"><i style="color: #002D4B;" class="fa fa-instagram"></i></a></div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Home</h4>
+        </div>
+        <div class="footer-column">
+          <h4>Conheça a CASSI</h4>
+          <ul>
+            <li><a href="#">Institucional</a></li>
+            <li><a href="#">Informações financeiras</a></li>
+            <li><a href="#">Governança corporativa</a></li>
+            <li><a href="#">Como trabalhamos</a></li>
+            <li><a href="#">Faça parte da nossa equipe</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Nossos Planos</h4>
+          <ul>
+            <li><a href="#">Plano CASSI Essencial</a></li>
+            <li><a href="#">Plano CASSI Família</a></li>
+            <li><a href="#">Plano CASSI Vida</a></li>
+            <li><a href="#">Quero contratar</a></li>
+            <li><a href="#">Plano de Associados</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Já tenho um plano CASSI</h4>
+          <ul>
+            <li><a href="#">Cobertura do meu plano</a></li>
+            <li><a href="#">Cronogramas</a></li>
+            <li><a href="#">Telemedicina</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>CliniCASSI</h4>
+          <ul>
+            <li><a href="#">Atenção Primária Saúde</a></li>
+            <li><a href="#">Localize sua CliniCASSI</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

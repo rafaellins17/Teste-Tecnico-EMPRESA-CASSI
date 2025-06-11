@@ -1,0 +1,575 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  gap: 16px;
+}
+
+.logo {
+  width: 105.85714721679688px;
+  height: 52px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: #fff;
+  width: 212px;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search-icon img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) saturate(100%) invert(9%) sepia(83%) saturate(1869%)
+    hue-rotate(181deg) brightness(96%) contrast(92%);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.social-follow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-text {
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.icon-bg {
+  background-color: #002d4b;
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa,
+.fab,
+.fas {
+  color: white;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  background: #002d4b;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  height: 40px;
+  white-space: nowrap;
+}
+
+.link_app_telemedicina {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  color: inherit;
+}
+
+.imgtelesaude {
+  width: 22.83px;
+  height: 30.37px;
+}
+
+.navbar {
+ background: #f8f8f800;
+    border-top: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 16px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li {
+  list-style-type: none;
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  display: block;
+}
+
+.arrow {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  min-width: 180px;
+  z-index: 100;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.left {
+  flex: 2;
+  min-width: 280px;
+}
+
+.right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.right img {
+  max-width: 100%;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 300px;
+  margin: 20px 0;
+}
+
+.nip {
+  padding-top: 10px;
+  border-top: 1px solid #c9c9c9;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 40px;
+}
+
+.nip-buttons {
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #003366;
+  color: #fff;
+}
+
+.footer {
+  background-color: #002f4e;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 105.85714721679688px;
+}
+
+.footer-social a {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #d3d62c;
+  margin: 29px 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px; /* controla a grossura */
+
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+h2,
+h3 {
+  color: #002d4b;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* RESPONSIVO GERAL */
+@media (max-width: 768px) {
+  .top-bar,
+  .search-container,
+  .social-follow {
+  
+  width: 100%;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+  }
+
+  .nip-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-outline,
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+/* Estilo do botão hamburguer */
+.hamburger {
+  display: none;
+  background: none;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  color: #002d4b;
+
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #f8f8f8;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 12px 16px;
+    width: 100%;
+  }
+
+  .submenu {
+    position: static;
+    border: none;
+  }
+
+  .menu li:hover .submenu {
+    display: none;
+  }
+
+  .menu li:focus-within .submenu {
+    display: block;
+  }
+}
+
+.dados {
+  border-bottom: 1px solid #c9c9c9;
+  padding-bottom: 17px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 646px;
+  height: auto;
+}
+
+.modal-content h3 {
+  margin-bottom: 16px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-content input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.alert-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #fdecea;
+  border: 1px solid #f44336;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.alert-box i {
+  color: #f44336;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.success-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.success-box i {
+  color: #34a853;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.alert-box-yes {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #d6fbd0;
+  border: 1px solid #29bb11;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* NOVOS ESTILOS PARA O FORMULÁRIO */
+.input-readonly {
+  background-color: #e5e5e5;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.seta {
+  width: 15px;
+}
+
+.icon-bg-footer {
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cor-footer {
+  color: #002d4b;
+}
+
+.fa.fa-adn,
+.fa.fa-bitbucket,
+.fa.fa-bitbucket-square,
+.fa.fa-dropbox,
+.fa.fa-flickr,
+.fa.fa-instagram,
+.fa.fa-stack-overflow,
+.fab,
+.far,
+.fa.fa-facebook-f {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.btn-outline,
+.btn-primary {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: 1px solid #003366;
+  background: none;
+  color: #003366;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+  background-color: #002d4b;
+  color: white;
+}
+
+.btn-outline {
+  background-color: rgb(255, 255, 255);
+  color: #002d4b;
+}
